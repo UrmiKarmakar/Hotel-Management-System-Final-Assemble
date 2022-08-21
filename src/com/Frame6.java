@@ -96,6 +96,23 @@ public class Frame6 extends JFrame implements ActionListener,MouseListener
                 f3p.setVisible(true);
                 this.setVisible(false);
         }
+	else if(searchButton.getGuest()==1) //implimentation 
+        {
+            g.setSelected(true);
+        }
+        else if(searchButton.getGuest()==0)
+        {
+            g.setSelected(false);
+        }
+
+        else if(removebButton.guestCheckOut()==1)
+        {
+            g.setSelected(true);
+        }
+        else if(removebButton.guestCheckOut()==0)
+        {
+            g.setSelected(false);
+        }
     }
     public void mouseClicked(MouseEvent me){}
 	public void mousePressed(MouseEvent me){}
